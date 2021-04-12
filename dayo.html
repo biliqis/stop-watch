@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width.device-width,initial-scale=1.0">
+    <title>stop watch</title>
+    <script src="dayo.js"></script>
+    <style>
+        
+        body {
+            font-size: 'roboto mono';
+            background: 	#ff0000;
+            height: 600px;
+            overflow: hidden;
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 45px;
+            color: aliceblue;
+        }
+
+        table {
+            margin: 20px auto;
+            text-align: center;
+
+        }
+
+        .label {
+            font-size: 100px;
+            font-family: 'roboto mono';
+            line-height: 100px;
+            margin: 5px;
+
+        }
+
+        td.button {
+            width: 100px;
+            padding: 5px;
+            border: 1px solid #ffff;
+            background-color: rgba(0, 0, 0, 192);
+            color: #fff;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table cellpadding=5>
+        <tr>
+            <td>
+                <h1 class="label" id="hr">00</h1>
+                <p>Hours</p>
+            </td>
+
+            <td>
+                <h1 class="label" id="min">00</h1>
+                <p>minutes</p>
+            </td>
+
+            <td>
+                <h1 class="label" id="sec">00</h1>
+                <p>seconds</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="reset()" id="reset">Reset</button>
+            </td>
+
+            <td>
+                <button onclick="stop()" id="stop">stop</button>
+            </td>
+
+            <td>
+                <button onclick="start()" id="start">start</button>
+            </td>
+            
+        </tr>
+        
+    </table>
+
+</body>
+
+</html>
